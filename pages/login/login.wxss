@@ -1,0 +1,143 @@
+@import "../../common/index.wxss";
+.changeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.changeInfoDepart{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.changeInfoName{
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.codeBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #bbb;
+  width: 30%;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.changeInfoName input{
+  width: 100%;
+  height:100%;
+}
+/*
+.changeBtn{
+  
+  height: 100rpx;
+  background: #e54847;
+  color: #fff;
+  border-radius: 50rpx;
+  position: absolute;
+  bottom: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  float: left;
+
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+*/
+button[type='danger'] {
+  background-color: #e54847;
+  color: #fff;
+}
+user agent stylesheet
+button:not([size='mini']) {
+  width: 184px;
+  margin-left: auto;
+  margin-right: auto;
+}
+user agent stylesheet
+button {
+  padding: 8px 24px;
+  line-height: 1.41176471;
+  border-radius: 50rpx;
+  font-weight: 700;
+  font-size: 17px;
+}
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+.inform {
+  padding: 0 6px;
+  font-size: 30rpx;
+}
+.item-box {
+  width: 700rpx;
+  margin: 0 auto;
+}
+.items {
+  width: 100%;
+}
+ 
+.item {
+  position: relative;
+  border-top: 2rpx solid #eee;
+  height: 110rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+ 
+.item:last-child {
+  border-bottom: 2rpx solid #eee;
+}
+ 
+.inner {
+  position: absolute;
+  top: 0;
+}
+ 
+.inner.txt {
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  padding: 0 10rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ 
+.inner.del {
+  background-color: #e64340;
+  width: 180rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+}
+ 
+.item-icon {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+ 
+.item-data {
+  margin-left: 15%;
+}

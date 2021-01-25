@@ -1,0 +1,16 @@
+ 应用生命周期：
+  1、不同文件外层不同，如App，Component，Page
+  2、onLaunch：应用第一次启动，获取用户个人信息
+  3、onShow：应用被用户看到，对应用的数据或者页面效果重置
+  4、onHide：应用被隐藏，暂停或清除定时器
+  5、onError：代码发生报错，就会触发。收集用户的错误信息，通过异步请求发送到后台
+  6、onPageNotFound：应用第一次启动找不到入口页面才触发
+页面生命周期：
+  1、onLoad
+  2、onShow
+  3、onReady
+  4、onHide
+  5、onUnload：卸载（关闭）页面
+  6、onPulldownRefresh：下拉刷新
+  7、onReachBottom：上拉刷新，需要让页面上下滚动
+  。。。

@@ -1,0 +1,41 @@
+<!--pages/save/save.wxml-->
+
+<view class='top-bar'>
+  <!--<image class='collect-img' src="{{save}}"></image>-->
+  我的收藏</view>
+<!--********书籍列表*****-->
+<view class='giftListView'>
+ <block wx:for="{{booklist}}" wx:for-index="index">
+ <!-- 每个cell -->
+  <view class='item' wx:key="{{item.ID}}"  data-item= "{{item}}" data-id="{{item.ID}}" id="{{index}}" >
+  <!-- 产品图片 -->
+  <view class='iconImageView'>
+    <image class='iconImage' src="{{item.ProductPic?item.ProductPic:'../image/bookface.jpg'}}" mode = 'aspectFit'></image>
+   <!-- 编号 -->
+  </view>
+   <view class='bookIsbnView'>
+    <text class='bookIsbnText'>编号：{{item.isbn}}</text> 
+   </view>
+   <!-- 产品名称 -->
+   <view class='bookNameView'>
+    <text class='bookNameText'>书名：{{item.book_name}}</text>
+   </view>
+
+   <!-- 书籍作者 -->
+   <view class='bookWriterView'>
+    <text class='bookWriterText'>作者：{{item.author}}</text>
+   </view>
+
+      <!-- 书籍分类 -->
+    <view class='bookCategoryView'>
+    <text class='bookCategoryText'>分类：{{item.genre}}</text>
+   </view>
+   
+     <!-- 库存 -->
+   <view class='numView'>
+   <text class='numText'>库存：{{item.status== 0 ? 1:0}} 本</text>
+  </view> 
+  </view>
+ </block>
+</view>
+

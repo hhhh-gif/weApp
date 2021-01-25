@@ -1,0 +1,95 @@
+.contain {
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+/*表格*/
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: white;
+  border-bottom: 0.5px solid lightgrey;
+}
+
+/*图标*/
+.item .icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+/*文字*/
+.item label {
+  margin: 5px 0 0 10px;
+  font-size: 15px;
+
+  /*撑开label两边部分的距离*/
+  flex: 1;
+
+  /*垂直居中*/
+  margin: auto;
+}
+
+/*箭头*/
+.item .arrow {
+  width: 8px;
+  height: 9px;
+  margin: auto;
+  margin-top: 13px;
+}
+
+.item .line {
+  background: lightgray;
+  height: 0.5px;
+}
+
+.userinfo {
+  background: #E54847;
+  height: 400rpx;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 60rpx);
+}
+
+.userinfo-nickname {
+  font-size: 36rpx;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 270rpx);
+}
+
+.asset{
+  display: flex;
+  border-top:1px solid #eee;
+  padding-top: 20rpx;
+}
+
+.asset .item{
+  display: flex;
+  flex-direction: column;
+  width: 375rpx;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.asset .right{
+  border-left: 1px solid #eee;
+}

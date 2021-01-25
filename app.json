@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/sys/sys",
+    "pages/user/user",
+    "pages/borrowedBook/borrowedBook",
+    "pages/returnedBook/returnedBook",
+    "pages/bookinfo/bookinfo",
+    "pages/login/login",
+    "pages/contact/contact",
+    "pages/save/save",
+    "pages/auth/auth"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "党建图书角管理系统",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#E54847",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/sys/sys",
+        "iconPath": "pages/image/book_search.png",
+        "selectedIconPath": "pages/image/book_search1.png",
+        "text": "图书列表"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "pages/image/user.jpg",
+        "selectedIconPath": "pages/image/user1.jpg",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

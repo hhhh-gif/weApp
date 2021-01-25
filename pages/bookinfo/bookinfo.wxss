@@ -1,0 +1,143 @@
+@import "../../common/index.wxss";
+.page {
+  min-height: 1000rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.duanluo {
+  width: 96%;
+  margin-left: 2%;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+}
+
+.duanluo image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content{
+  width: 100%;
+  height: auto;
+  line-height: 44rpx;
+  font-size: 35rpx;
+  color: #000;
+}
+
+.item {
+  height: 200rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.item .lt {
+  float: left;
+  width: 200rpx;
+}
+
+.item .lt image {
+  width: 180rpx;
+  height: 160rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+
+.item .rt {
+  float: left;
+  width: 480rpx;
+  height: 180rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+/*
+.borrow {
+  height: 50rpx;
+  width: 140rpx;
+  position: absolute;
+  right: 10rpx;
+  bottom: 80rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  border:1rpx solid #7fabfd; 
+  color:#7fabfd;
+}
+.save {
+  height: 50rpx;
+  width: 140rpx;
+  position: absolute;
+  right: 10rpx;
+  bottom: 5rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  border:1rpx solid #7fabfd; 
+  color:#7fabfd;
+}
+*/
+.item .rt .name {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 40rpx;
+}
+
+.item .rt .xinghao {
+  line-height: 40rpx;
+  height: 40rpx;
+}
+
+.item .rt .surplus {
+  line-height: 40rpx;
+  height: 28rpx;
+  margin-top: 70rpx;
+  
+}
+
+.surplus .money {
+  color: red;
+  font-weight: bold;
+  font-size: 26rpx;
+}
+
+.title {
+  height: 80rpx;
+  width: 96%;
+  margin-left: 2%;
+  border-bottom: 1rpx solid #f2f2f2;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.borrow {
+  position: absolute;
+  left: 10rpx;
+}
+.save {
+  position: absolute;
+  right: 10rpx;
+}
+button[type='danger'] {
+  background-color: #f2f2f2;
+  color: #e54847;
+  border-color: white;
+}
+user agent stylesheet
+button:not([size='large']) {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+user agent stylesheet
+button {
+  padding: 8px 24px;
+  line-height: 1.41176471;
+  border-radius: 50rpx;
+  font-weight: 700;
+  font-size: 17px;
+}

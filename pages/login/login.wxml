@@ -1,0 +1,62 @@
+<view class="top-bar">登录页面</view>
+<view class='inform'>
+  <view class="item-box">
+    <view class="items">
+      <view class="item">
+        <view class="inner txt">
+          <image class="item-icon" mode="widthFix" src="../image/name.png"></image>
+          <i> 姓名:</i>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  <view class='changeInfo'> 
+      <view class='changeInfoName'>
+         <input placeholder='请输入姓名' bindinput="getName" value="{{inputList.username}}"/> 
+      </view>
+   </view>
+   <view class='inform'>
+  <view class="item-box">
+    <view class="items">
+      <view class="item">
+        <view class="inner txt">
+          <image class="item-icon" mode="widthFix" src="../image/OA.png"></image>
+          <i> OA账号:</i>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='changeInfo'>
+  <view class='changeInfoName'>
+     <input placeholder='请输入OA账号' bindinput="getOaNum"  model-value="{{inputList.oanum}}"/> 
+  </view>
+</view>
+<view class='inform'>
+  <view class="item-box">
+    <view class="items">
+      <view class="item">
+        <view class="inner txt">
+          <image class="item-icon" mode="widthFix" src="../image/pwd.png"></image>
+          <i> 密码:</i>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='changeInfo'>
+  <view class='changeInfoName'>
+     <input placeholder='请输入密码'  bindinput="getCode" model-value='{{inputList.password}}'/> 
+  </view>
+ 
+</view>
+     
+
+  <!--<button class='changeBtn' bindtap='checkIn'>登录</button>-->
+<view>
+  <button class='bottom' lang='zh_CN' bindtap='checkIn' type="danger" role='button' aria-disabled="false">登录</button>
+</view>

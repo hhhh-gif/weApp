@@ -1,0 +1,34 @@
+<view class="top-bar">已归还图书</view>
+<!--********书籍列表*****-->
+<!-- 礼品列表 -->
+<view class='giftListView'>
+ <block wx:for="{{bookList}}">
+ <!-- 每个cell -->
+  <view class='item' wx:key="{{item.ID}}" bindtap='dunHuanAction' data-item= "{{item}}" data-id="{{item.ID}}" >
+  <!-- 产品图片 -->
+   <view class='iconImageView'>
+    <image class='iconImage' src="{{item.ProductPic?item.ProductPic:'../image/bookface.jpg'}}" mode = 'aspectFit'></image>
+   </view>
+   <!-- 产品名称 -->
+   <view class='bookNameView'>
+    <text class='bookNameText'>书名：{{item.book_name}}</text>
+   </view>
+
+   <!-- 书籍作者 -->
+   <view class='bookWriterView'>
+    <text class='bookWriterText'>作者：{{item.author}}</text>
+   </view>
+
+      <!-- 书籍分类 -->
+    <view class='bookCategoryView'>
+    <text class='bookCategoryText'>分类：{{item.genre}}</text>
+   </view>
+   
+     <!-- 库存 -->
+   <view class='bookIdView'>
+   <text class='bookIdText'>编号：{{item.book_id}}</text>
+  </view> 
+
+  </view>
+ </block>
+</view>

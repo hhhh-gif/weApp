@@ -1,0 +1,94 @@
+<!--
+  1、text相当于span，不换行
+  2、view相当于div，换行
+  3、checkbox：复选框，使用checked时，字符串和花括号不要有空格
+  4、在花括号中加表达式：简单运算，如数字加减，字符串拼接，三元表达式。
+  5、wx：for列表循环
+      1、wx：for=“{{数组或对象}}” wx：for-item=“循环项名称” wx：for-index=“循环项的索引”
+      2、wx：key=“唯一的值”
+      3、嵌套循环：绑定的名称不要重名
+  6、对象循环
+      1、wx：for=“{{数组或对象}}” wx：for-item=“对象的值” wx：for-index=“对象的属性”
+  7、block：占位符。写代码时标签存在，渲染时无
+  8、条件渲染
+      1、wx：if=“{{布尔表达式}}”  || hidden=“{{布尔表达式}}”  ||标签不频繁显示使用wx：if，否则使用hidden
+      2、wx：elif=“{{布尔表达式}}”
+      3、wx：else
+
+
+      ----
+  1、rich-text：富文本
+    标签字符串
+  2、button
+    size：大小
+    type：颜色
+    。。。
+
+    ----
+    1、icon图标  
+      图标类型
+      图标大小
+      图标颜色
+-->
+<!-- <view>{{num}}</view>
+<view>
+</view>
+<text selectable>
+  text &nbsp; hhh;
+</text>
+<input/>
+<button size="mini" type="">查询</button> -->
+<view class="top-bar">图书列表</view>
+<!--*********搜索框*******-->
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="请输入书名" bindinput="getInputValue" value="{{bookName}}"/>
+                </view>
+            </view>
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <view class="weui-search-bar__cancel-btn" bindtap='getBooks'>搜索</view>
+        </view>
+    </view>
+</view>
+
+<!--********书籍列表*****-->
+<view class='giftListView'>
+ <block wx:for="{{booklist}}" wx:for-index="index">
+ <!-- 每个cell -->
+  <view class='item' wx:key="{{item.ID}}" bindtap='bookInfo' data-item= "{{item}}" data-id="{{item.ID}}" id="{{index}}" >
+  <!-- 产品图片 -->
+   <view class='iconImageView'>
+    <image class='iconImage' src="{{item.ProductPic?item.ProductPic:'../image/bookface.jpg'}}" mode = 'aspectFit'></image>
+   <!-- 编号 -->
+  </view>
+   <view class='bookIsbnView'>
+    <text class='bookIsbnText'>编号：{{item.isbn}}</text> 
+   </view>
+   <!-- 产品名称 -->
+   <view class='bookNameView'>
+    <text class='bookNameText'>书名：{{item.book_name}}</text>
+   </view>
+
+   <!-- 书籍作者 -->
+   <view class='bookWriterView'>
+    <text class='bookWriterText'>作者：{{item.author}}</text>
+   </view>
+
+      <!-- 书籍分类 -->
+    <view class='bookCategoryView'>
+    <text class='bookCategoryText'>分类：{{item.genre}}</text>
+   </view>
+   
+     <!-- 库存 -->
+   <view class='numView'>
+   <text class='numText'>库存：{{item.status== 0 ? 1:0}} 本</text>
+  </view> 
+  </view>
+ </block>
+</view>
+

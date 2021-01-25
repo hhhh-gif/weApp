@@ -1,0 +1,29 @@
+<!-- 书籍详情 -->
+<view class="top-bar">书籍详情</view>
+<view class="page">
+  <view class="item bdbt">
+    <view class="lt">
+      <image src="../image/bookface.jpg"></image>
+    </view>
+    <view class="rt">
+      <view class="name">{{bookInfo.book_name}}</view>
+      <view class="surplus">
+        库存：
+        <text class="surplus">{{bookInfo.status== 0 ? 1:0}}</text>
+        本
+      </view>
+    </view>
+  </view>
+  <view class="title">简介</view>
+  <text>{{bookInfo.author}}-{{bookInfo.book_name}}\n
+  待补充，敬请期待。</text>
+  <view class="duanluo">
+    <image  src="{{bookInfo.bookFace}}"></image>
+    <text class="content">{{bookInfo.bookDetail}}</text>
+  </view>
+</view>
+
+<view class="asset">
+  <button class="mini-btn" class='borrow' type="danger" role='button' bindtap="borrowBook" disabled="{{canBorrow}}">{{borrowText}}</button>
+  <button class="mini-btn" class="save" type="danger" role='button' bindtap="saveBook">收藏</button>
+</view>
